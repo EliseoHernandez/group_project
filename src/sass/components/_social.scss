@@ -1,0 +1,28 @@
+.social-icon {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 100%;
+    background-color: $secondary-color;
+
+    &__svg {
+        width: 20px;
+        height: 20px;
+        fill: $text-color-tertiary;
+    }
+
+    &:hover {
+        background-color: $primary-color;
+
+        .social-icon__svg{
+            fill: $secondary-color;
+        }
+    }
+
+    &--footer {
+        background-color: #535458;        
+    }
+    &__svg--footer {
+        fill: $secondary-color;
+    }
+}
