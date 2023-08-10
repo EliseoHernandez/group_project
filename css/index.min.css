@@ -24,6 +24,13 @@
   border-radius: 2px;
 }
 
+.example .background {
+  height: 240px;
+  background-image: url("./images/logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .button {
   font-family: "Roboto";
   font-weight: 500;
