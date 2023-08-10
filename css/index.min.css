@@ -1,4 +1,10 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .example {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
@@ -20,7 +26,228 @@
 
 .example .background {
   height: 240px;
-  background-image: url("../images/logo.png");
+  background-image: url("../../images/logo.png");
   background-size: cover;
   background-position: center;
+}
+
+.button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  height: 50px;
+  width: 205px;
+  line-height: 1.9;
+  color: #ffffff;
+  background-color: #2196F3;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(17, 17, 17, 0.7411764706);
+  display: flex;
+  transition: opacity 300ms ease, visibility 300ms ease;
+  opacity: 100%;
+  pointer-events: auto;
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop__modal {
+  width: 528px;
+  height: 581px;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.backdrop__close {
+  position: absolute;
+  right: 0;
+  margin: 8px 8px 0 0;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border-color: rgba(0, 0, 0, 0.1019607843);
+  width: 30px;
+  height: 30px;
+}
+.backdrop__icon-close {
+  width: 11px;
+  height: 11px;
+}
+.backdrop:is(:hover, :focus) .backdrop__icon-close {
+  fill: #2196F3;
+}
+
+.button--center {
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 0px !important;
+  width: 0px !important;
+  overflow: hidden;
+}
+
+.checkbox {
+  display: flex;
+}
+.checkbox__label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.checkbox__label::before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 15px;
+  border: 1px solid #212121;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 9px;
+  margin-bottom: 20px;
+}
+.checkbox__input:checked + .checkbox__label::before {
+  content: url(../img/iconcheck.svg);
+  border-color: #2196F3;
+  background-color: #2196F3;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 0px !important;
+  width: 0px !important;
+  overflow: hidden;
+}
+
+.backdrop__form-container {
+  padding: 40px;
+}
+
+.backdrop__h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.backdrop__label {
+  color: #757575;
+  font-size: 14px;
+}
+
+.backdrop__form {
+  position: relative;
+}
+.backdrop__form:is(:hover, :focus-within) .backdrop__icon-hover {
+  fill: #2196F3;
+  outline: none;
+}
+
+.backdrop__text,
+.backdrop__textarea {
+  width: 100%;
+  padding: 12px 45px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.backdrop__text:is(:hover, :focus),
+.backdrop__textarea:is(:hover, :focus) {
+  border-color: #2196F3;
+}
+
+.backdrop__textarea {
+  color: #757575 50%;
+  font-size: 12px;
+  height: 120px;
+  padding: 12px 16px;
+}
+
+.backdrop__name,
+.backdrop__tel,
+.backdrop__mail {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 11px;
+  margin: 13px;
+}
+
+.backdrop__tel {
+  width: 13px;
+  height: 13px;
+}
+
+.backdrop__mail {
+  width: 15px;
+  height: 15px;
+}
+
+.logo {
+  height: 31px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #2196F3;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+.social-icon__svg {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+}
+.social-icon:hover {
+  background-color: #2196F3;
+}
+.social-icon:hover .social-icon__svg {
+  fill: #ffffff;
+}
+.social-icon--footer {
+  background-color: #535458;
+}
+.social-icon__svg--footer {
+  fill: #ffffff;
+}
+
+.card {
+  display: flex;
 }
