@@ -1,0 +1,89 @@
+li{
+    list-style: none;
+}
+.footer{
+    background-color:  #FFF5F6;
+}
+
+.fbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 12px;
+    
+}
+.title2{
+    color: #FFA5BA;
+font-family: Titan One;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+}
+.title1{
+    color: #D41443;
+font-family: Titan One;
+font-size: 58px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 3.48px;
+text-transform: uppercase;
+}
+
+.buttons{
+    border-radius: 22px;
+    border-style: hidden;
+    padding: 14px 35px 14px 35px;
+}
+
+.fbutton__location{
+    background-color: #D41342;
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fbutton__franchise{
+    background-color: #FFF;
+    color: #D41443;
+text-align: center;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.footer__last{
+    display: flex;
+    justify-content: space-between;
+}
+
+.media{
+    display: flex;
+    gap: 15px;
+}
+
+.footer__tel{
+    color: #D41443;
+}
+.footer__rights{
+    align-items: center;
+}
+.footer-p{
+    display: flex;
+    justify-content: center;
+}
+.footer__titles{
+    margin-top: 121px;
+    margin-left: 16px;
+}
