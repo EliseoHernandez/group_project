@@ -1,0 +1,148 @@
+
+.container-card{
+width: 1200px;
+height: auto;
+display: flex;
+gap: 32px;
+}
+
+.card{
+    width: 368px;
+    height: 538px;
+    padding: 40px;
+    border: 1px;
+    border-radius: 24px;
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+    }
+
+.rectangle{
+border-radius: 6px;
+background: #F0D1A5;
+width: 75.103px;
+height: 28px;
+flex-shrink: 0;
+list-style-type: none;
+display: flex;
+align-items: center;
+color: #FFF;
+justify-content: center;
+margin-bottom: 0;
+}
+
+.txtbutton{
+    width: 75.103px;
+height: 28px;
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 29.76px */
+    letter-spacing: 0.64px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.titulo{
+color: #000;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 186%; /* 29.76px */
+letter-spacing: 0.64px;
+margin-top: 32px;
+margin-bottom: 0;
+}
+
+.titulo2{
+    color: #000;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 29.76px */
+    letter-spacing: 0.64px;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.hour1{
+    color: #FFA5BA;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%;
+    margin-bottom: 12px;
+    margin-top: 0; 
+}
+
+.parrafos{
+color: #907E82;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 29.28px */
+letter-spacing: 0.64px;
+margin-bottom: 32px;
+}
+
+.line{
+width: 288px;
+height: 0px; 
+border: 0.50px #E1E1E1 solid
+}
+
+.hour{
+color: #FFA5BA;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 186%;
+margin-bottom: 32px;
+margin-top: 0;
+}
+
+.phone{
+    color: #907E82;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 29.28px */
+    letter-spacing: 0.64px;
+    margin-bottom: 0;  
+    margin-top: 32px;
+}
+
+.mail{
+    color: #907E82;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 29.28px */
+    letter-spacing: 0.64px;
+    margin-bottom: 40px;  
+    margin-top: 8px;
+}
+
+.rectangle2{
+    border-radius: 6px;
+    background: #C2E297;
+    width: 138px;
+    height: 28px;
+    flex-shrink: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    justify-content: center;
+    margin-bottom: 0;  
+}
+
