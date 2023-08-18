@@ -1,79 +1,76 @@
-/* .container-sec1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 61px;
-} */
-
-.sec1-products{
-  width: 1200px;
-  height: auto;
-  padding-top: 60px;
-padding-bottom: 60px;
-margin: auto;
+.products {
+  &__tittle {
+    text-align: center;
+  }
+  &__sec1 {
+    width: 1200px;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: auto;
+  }
+  & h2 {
+    font-family: titan one;
+    font-weight: 400;
+    font-size: 58px;dc     
+    color: #d41443;
+  }
+  & h3 {
+    font-family: titan one;
+    font-weight: 400;
+    font-size: 30px;
+    color: #ffa5ba;
+  }
+  & ul {
+    list-style-type: none;
+  }
+  &__right {
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 148px 0px 170px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+  }
+  &__icon-arrow {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 12px;
+    top: 11px;
+    fill: #d41443;
+  }
+  &__list {
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 100px;
+    & h3 {
+      color: #ffff;
+    }
+  }
+  &__imag {
+    position: relative;
+    top: 136px;
+  }
+  &__svg {
+    position: absolute;
+  }
+  &__points {
+    width: 34px;
+    height: 36px;
+    margin: 212px 167px;
+  }
 }
 
-.products_tittle {
-  text-align: center;
-}
-
-.products_tittle h2 {
-  color: #d41443;
-}
-
-.products_tittle h3 {
-  color: #ffa5ba;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.products_right {
-  position: absolute;
-/*   background-color: white; */
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 20px 148px 0px 170px;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  cursor: pointer;
-  display: flex;
-}
-
-.products_icon-arrow {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 12px;
-  top: 11px;
-  fill: #d41443;
-}
-
-.products_list {
-  color: #ffff;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  bottom: 100px;
-}
-
-.products_imag {
-  position: relative;
-  top: 136px;
-}
-
-.products_svg {
-  position: absolute;
-}
-
-.products_points {
-  width: 34px;
-  height: 36px;
-  margin: 212px 167px;
-}
-
-.products_icecream {
+.products__icecream {
+  font-family: titan one;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.1em;
   width: 368px;
   height: 535px;
   background-color: #ffb8ca;
@@ -81,20 +78,27 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  & h3 {
+    text-align: center;
+    margin: 30px;
+  }
+
+  & p {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    margin: 35px 60px;
+    letter-spacing: 1px;
+  }
 }
 
-.products_icecream h3 {
-  text-align: center;
-  margin: 30px;
-}
-
-.products_icecream p {
-  text-align: center;
-  margin: 35px 60px;
-  letter-spacing: 1px;
-}
-
-.products_icecoffee {
+.products__icecoffee {
+  font-family: titan one;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.1em;
   width: 368px;
   height: 535px;
   background: #f0d1a5;
@@ -102,20 +106,27 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  & h3 {
+    text-align: center;
+    margin: 22px;
+  }
+
+  & p {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    margin: 42px 60px;
+    letter-spacing: 1px;
+  }
 }
 
-.products_icecoffee h3 {
-  text-align: center;
-  margin: 22px;
-}
-
-.products_icecoffee p {
-  text-align: center;
-  margin: 42px 60px;
-  letter-spacing: 1px;
-}
-
-.products_milkshakes {
+.products__milkshakes {
+  font-family: titan one;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.1em;
   width: 368px;
   height: 535px;
   background: #c2e297;
@@ -123,15 +134,16 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.products_milkshakes h3 {
-  text-align: center;
-  margin: 34px;
-}
-
-.products_milkshakes p {
-  text-align: center;
-  margin: 30px 60px;
-  letter-spacing: 1px;
+  & h3 {
+    text-align: center;
+    margin: 34px;
+  }
+  & p {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    margin: 30px 60px;
+    letter-spacing: 1px;
+  }
 }
