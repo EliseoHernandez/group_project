@@ -1,11 +1,42 @@
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
+} */
+.rose{
+/*   width: 1280px; */
+/*   height: 664px; */
+  background-color: #FFB8CA;
+  margin-left:auto;
+  background-image: url(/src/images/Ellipse_3.svg);
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  background-position-y: 30%;
+;
+}
+.logo__tasty {
+  width: 304px;
+  height: 241px;
 }
 
-body {
+.logo__tasty{
+  width: 304px;
+height: 241px;
+margin: 0;
+}
+  
+/* body {
+  font-family: Titan One;
+
+  background-image: url(/src/images/Ellipse_3.svg);
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  background-position-y: 30%;
+  z-index: -1;
+  margin-left: 0 auto;
+} */
+
+/* body {
   font-family: Titan One;
   background-color: #ffb8ca;
   background-image: url(/src/images/Ellipse_3.svg);
@@ -13,55 +44,40 @@ body {
   background-position-x: 70%;
   background-position-y: 30%;
   z-index: -1;
-
   margin-left: 0 auto;
 }
-
-
-
-      .header {
-        background-color: #ffb8ca;
-        font-family: Titan One;
+ */
+ .header__ul{
+  background-image: url(/src/images/bottom-background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 95%;
+  background-position-x: 60%;
+}
+/*       .header {
         height: 664px;
-        background-image: url(/src/images/Ellipse_3.svg),;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-position-y: 30%,95%;
-        background-position-x: 70%,60%;
-        z-index:-1;
-      }
 
-      .header::after{
-        background-image: url(/src/images/bottom-background.svg);
-        z-index:-1;
-        background-position:30
+      } */
 
-      }
-
-      .header {
-        height: 664px;
-        background-image: url(/src/images/bottom-background.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-position-y: 95%;
-        background-position-x: 60%;
-        z-index: -1;
-      }
-
+ 
 
 /*espeficaciones contenedor header*/
 
-      .header .nav {
-        width: 100%;
-        max-width: 1280px;
-        padding: 30px 10px;
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        z-index: 2;
-      }
+    .header .nav {
 
+    width: 100%;
+    max-width: 1280px;
+    z-index: 2;
+    justify-content: space-evenly;
+    padding: 30px 10px;
+    display: inline-flex;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+      }
+      
 
                 .list__i {
                   display: flex;
@@ -70,7 +86,7 @@ body {
                   justify-content: space-between;
                   list-style-type: none;
                 }
-
+                
                     .nav__link {
                       font-family: DM Sans;
                       font-size: 16px;
@@ -81,16 +97,17 @@ body {
                       text-decoration: none;
                       color: #ffffff;
                     }
-
+                    
+      
                         .nav__link:hover,
                         .nav__link:focus {
                           color: #d41443;
                         }
 
-
+                 /*finaliza parametros para el menu*/       
 
                  /*comienza configuración boton derecho superior*/
-                          .btn__right {
+                          .btn__buy {
                             width: 159px;
                             height: 44px;
                             background-color: #ffffff;
@@ -104,17 +121,13 @@ body {
                             align-items: center;
                           }
 
-
-                          .btn__right:hover,
-
-                          .btn__right:hover, 
-
-                          .btn__right:focus {
+                          .bnt__buy:hover, 
+                          .bnt__buy:focus {
                             background-color: #ecebeb;
                             color: #ffffff;
                           }
 
-                          .btn__text {
+                          .btn__text-buy {
                             color: #d41443;
                             justify-content: center;
                             font-family: DM Sans;
@@ -138,7 +151,7 @@ body {
 
                             /*               */
 
-                                  .header__next {
+                                  .left__opt {
                                     display: flex;
                                     justify-content: space-between;
                                     align-items: center;
@@ -146,8 +159,8 @@ body {
                                     height: 300px;
                                   }
 
-
-                                        .left__opt{
+                          
+                                        .left__opt-passion{
                                               width: 277px;
                                               height: 137px;
                                               margin-left: 56px;
@@ -155,7 +168,7 @@ body {
                                               height: auto;
                                             }
 
-                                          .first__line {
+                                          .first__h1 {
                                             color: #ffffff;
                                             font-family: Titan One;
                                             font-size: 38px;
@@ -165,7 +178,7 @@ body {
                                             text-align: left;
                                           }
 
-                                          .second__line{
+                                          .first__h2{
                                             color: #d41443;
                                             font-family: Titan One;
                                             font-size: 58px;
@@ -175,7 +188,7 @@ body {
                                             text-align: left;
                                           }
 
-
+                                                                  
                                       /*button Ice Cream */
                                       .buttons {
                                         margin-top: 12px;
@@ -198,7 +211,7 @@ body {
                                         letter-spacing: 0em;
                                         text-align: center;
                                       }
-
+      
                                       .btn__made{
                                         background: #d41443;
                                         width: 138px;
@@ -225,8 +238,8 @@ body {
 
 
 
-                                    <!--bloques superpuestos-->
-                    
+                                 /*    <!--bloques superpuestos--> */
+                                    
 
 
                                     .next__right {
@@ -240,19 +253,11 @@ body {
                                       left: 70px;
                                       z-index: -1;
                                     }
-
-
-                            .group__obj {
-                            list-style: none;
-                              }
-
-
                             
                             .group__obj {
                             list-style: none;
                               }
                                     
-
                                     .big__number {
                                       font-family: Titan One;
                                       font-size: 46px;
@@ -271,17 +276,10 @@ body {
                                       letter-spacing: 0em;
                                       text-align: left;
                                       color: #ffffff;
-
-                                      z-index: -1;
-                                    }
-
-                            /* segundo bloque sobreposition*/
-
                                       z-index: -1;                                   
                                     }
 
                             /* segundo bloque sobreposition*/             
-
 
                             .block__left {
                                display: flex;
@@ -350,7 +348,7 @@ body {
                                     text-align: left;
                                     color: #ffffff;
                                   }
-
+                                    
                                       /*FOOT HEADER*/
 
                                     .foot__right {
@@ -366,7 +364,4 @@ body {
                                       position: absolute;
                                       top: 423px;
                                       right: 50px;
-
 }/*# sourceMappingURL=styles.css.map */
-}/*# sourceMappingURL=styles.css.map */
-

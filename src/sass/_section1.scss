@@ -1,0 +1,137 @@
+/* .container-sec1 {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 61px;
+} */
+
+.sec1-products{
+  width: 1200px;
+  height: auto;
+  padding-top: 60px;
+padding-bottom: 60px;
+margin: auto;
+}
+
+.products_tittle {
+  text-align: center;
+}
+
+.products_tittle h2 {
+  color: #d41443;
+}
+
+.products_tittle h3 {
+  color: #ffa5ba;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.products_right {
+  position: absolute;
+/*   background-color: white; */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 20px 148px 0px 170px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+}
+
+.products_icon-arrow {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 12px;
+  top: 11px;
+  fill: #d41443;
+}
+
+.products_list {
+  color: #ffff;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 100px;
+}
+
+.products_imag {
+  position: relative;
+  top: 136px;
+}
+
+.products_svg {
+  position: absolute;
+}
+
+.products_points {
+  width: 34px;
+  height: 36px;
+  margin: 212px 167px;
+}
+
+.products_icecream {
+  width: 368px;
+  height: 535px;
+  background-color: #ffb8ca;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.products_icecream h3 {
+  text-align: center;
+  margin: 30px;
+}
+
+.products_icecream p {
+  text-align: center;
+  margin: 35px 60px;
+  letter-spacing: 1px;
+}
+
+.products_icecoffee {
+  width: 368px;
+  height: 535px;
+  background: #f0d1a5;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.products_icecoffee h3 {
+  text-align: center;
+  margin: 22px;
+}
+
+.products_icecoffee p {
+  text-align: center;
+  margin: 42px 60px;
+  letter-spacing: 1px;
+}
+
+.products_milkshakes {
+  width: 368px;
+  height: 535px;
+  background: #c2e297;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.products_milkshakes h3 {
+  text-align: center;
+  margin: 34px;
+}
+
+.products_milkshakes p {
+  text-align: center;
+  margin: 30px 60px;
+  letter-spacing: 1px;
+}
