@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
+}   /* this goes to Base*/
 
 .header__cont {
   flex-basis: 1400px;
@@ -115,9 +115,9 @@
                                 z-index: 1;
                               }
 
-                              .circle__back {
+                               .circle__back {
                                 z-index: -1;
-                              }
+                              }  
 
                             /*               */
 
