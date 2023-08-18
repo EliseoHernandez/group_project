@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    top: -89px;
+    top: -102px;
     &__img {
         width: 100vw;
     }
@@ -51,11 +51,14 @@
         font-size: 16px;
         line-height: 2;
         text-align: center;
-        position: relative;        
+        position: relative;
+        font-family: DM Sans;
+        font-weight: 500;            
     }
     &__h2 {
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 500;
+        font-family: DM Sans;
     }
     &__sgv {
         width: 32px;
