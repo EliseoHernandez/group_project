@@ -111,41 +111,37 @@ body {
 /*Botón abrir modal*/
 
 .modal-backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100vw;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  visibility: hidden;
-  background: rgb(243, 210, 217);
+  background: #f3d2d990;
+  pointer-events: auto;
   &.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-}
+  }
   &__content {
-    width: 900px;
-    height: 700px;
-    padding: 10px;
-    border-radius: 5px;
+    width: 850px;
+    height: 550px;
+    padding: 10px 25px;
+    border-radius: 15px;
     background: var(--secondary-color);
-    text-align: center;
-    background-size: 200px;
-    background-repeat: no-repeat;
+    align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: relative;
+    gap: 20px;
     & h2 {
       font-size: 25px;
       font-weight: 500;
       color: var(--primary-color);
-      padding-top: 15px;
-      margin-bottom: 180px;
     }
     & p {
       color: var(--brand-color);
@@ -156,12 +152,10 @@ body {
       line-height: 1.5;
       letter-spacing: 0.56px;
       text-align: justify;
-      margin-bottom: 30px;
-      padding-left: 50px;
-      padding-right: 50px;
     }
   }
 }
+
 
 .modal-close {
   width: 30%;
