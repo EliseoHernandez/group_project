@@ -1,0 +1,613 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}   /* this goes to Base*/
+
+.header__cont {
+  flex-basis: 1400px;
+  height: 664px;
+  background-image: url(/src/images/bottom-background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 95%;
+  background-position-x: 60%;
+  z-index: -1;
+}
+
+
+      .header {
+        font-family: Titan One;
+        background-color: #ffb8ca;
+        background-image: url(/src/images/Ellipse_3.svg);
+        background-repeat: no-repeat;
+        background-position-x: 70%;
+        background-position-y: 30%;
+        margin-left: 0 auto;
+      }
+      
+ 
+/*espeficaciones contenedor header*/
+
+       .header__nav  {
+        display:flex;
+        padding:15px 15px;
+        flex-basis: 100vw;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+   
+
+      
+                .nav__items {
+                  display:inline-flex;
+                  width: 541px;
+                  align-items: start;
+                  justify-content: space-between;
+                  list-style-type: none;
+                }
+
+                    .nav__link {
+                      font-family: DM Sans;
+                      font-size: 16px;
+                      font-weight: 700;
+                      line-height: 21px;
+                      letter-spacing: 0em;
+                      text-align: left;
+                      text-decoration: none;
+                      color: #ffffff;
+                    }
+
+
+                        .nav__link:hover,
+                        .nav__link:focus
+                       {
+                          color: #d41443;
+                        }
+
+                 /*finaliza parametros para el menu*/
+
+                 /*comienza configuración boton derecho superior*/
+                          .btn__buy {
+                            width: 159px;
+                            height: 44px;
+                            background-color: #ffffff;
+                            border-radius: 22px;
+                            border: 1px;
+                            padding: 0 30px;
+                            text-decoration: none;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap:20px;
+                          }
+
+                          .btn__buy:hover,
+                          .btn__buy:focus{
+                            background-color: #ecebeb;
+                            color: #ffffff;
+                          }
+
+                          .icon--ppal:hover,
+                          .icon--ppal:focus{
+                            fill: #ffffff;
+                          }
+
+                          .btn__text {
+                            color: #d41443;
+                            justify-content: center;
+                            font-family: DM Sans;
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                            text-align: center;
+                          }
+
+                          
+
+                          
+                        /*imagen de fondo background*/
+
+                              .img__back__icon {
+                                position: absolute;
+                                z-index: 1;
+                              }
+
+                               .circle__back {
+                                z-index: -1;
+                              }  
+
+                            /*               */
+
+                                  .menu__next {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    width: 1280px;
+                                    height: 300px;
+                                  }
+
+
+                                        .menu__left{
+                                              width: 277px;
+                                              height: 137px;
+                                              margin-left: 56px;
+                                              margin-left: 20px;
+                                              height: auto;
+                                            }
+
+                                          .text__h1 {
+                                            color: #ffffff;
+                                            font-family: Titan One;
+                                            font-size: 38px;
+                                            font-weight: 400;
+                                            line-height: 44px;
+                                            letter-spacing: 0.04em;
+                                            text-align: left;
+                                          }
+
+                                          .text__h2{
+                                            color: #d41443;
+                                            font-family: Titan One;
+                                            font-size: 58px;
+                                            font-weight: 400;
+                                            line-height: 52px;
+                                            letter-spacing: 0.04em;
+                                            text-align: left;
+                                          }
+
+
+                                      /*button Ice Cream */
+                                      .buttons__left{
+                                        margin-top: 12px;
+                                        display: inline-flex;
+                                        gap: 12px;
+                                      }
+
+                                      .btn__products{
+                                        display:flex;
+                                        justify-content: center;
+                                        align-items:center;
+                                        background: #d41443;
+                                        height: 40px;
+                                        width: 107px;
+                                        top: 308px;
+                                        left: 16px;
+                                        border-radius: 20px;
+                                        color: #ffffff;
+                                        font-family: DM Sans;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 18px;
+                                        letter-spacing: 0em;
+                                        text-align: center;
+                                      }
+
+                                      .btn__made{
+                                        display:flex;
+                                        justify-content: center;
+                                        align-items:center;
+                                        background: #d41443;
+                                        width: 138px;
+                                        height: 40px;
+                                        top: 308px;
+                                        left: 135px;
+                                        border-radius: 20px;
+                                        color: #ffffff;
+                                        font-family: DM Sans;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 18px;
+                                        letter-spacing: 0em;
+                                        text-align: center;
+                                      }
+
+                                      .btn__made:hover,
+                                      .btn__made:focus,
+                                      .btn__products:hover,
+                                      .btn__products:focus {
+                                        background-color: #ecebeb;
+                                        color: #d41443;
+                                      }
+
+
+
+                                    /*--bloques superpuestos*/
+
+
+
+                                    .group__right {
+                                      top: 150px;
+                                      left:90%;
+                                      position: absolute;
+                                    }
+
+
+                                    .group__logo {
+                                      position: relative;
+                                      left: 70px;
+                                      z-index: 1;
+                                    }
+
+                            .group__obj {
+                            list-style: none;
+                              }
+
+                                    .group__big {
+                                      font-family: Titan One;
+                                      font-size: 46px;
+                                      font-weight: 400;
+                                      line-height: 53px;
+                                      letter-spacing: 0.04em;
+                                      margin-right: 5px;
+                                      color: #d41443;
+                                      z-index:1;
+                                    }
+
+                                    .big__text {
+                                      font-family: DM Sans;
+                                      font-size: 14px;
+                                      font-weight: 400;
+                                      line-height: 20px;
+                                      letter-spacing: 0em;
+                                      text-align: left;
+                                      color: #ffffff;
+                                      z-index: 2;
+                                    }
+
+                            /* segundo bloque sobreposition*/
+
+                            .block__left {
+                               display: flex;
+                              position: relative;
+                                }
+
+                              .group__text {
+                                      display: flex;
+                                      flex-direction: column;
+                                      width: auto;
+                                      height: 73px;
+                                      top: -30px;
+                                      left: 30px;
+                                      position: relative;
+                                      justify-content: left;
+                                    }
+
+                                .group__obj:nth-child(2) {
+                                  top: -10px;
+                                  position: relative;
+                                }
+
+                             /*modal boton pequeño*/
+
+                             .modal-overlay {
+                              background: rgba(0, 0, 0, 0.906);
+                              width: 100%;
+                              height: 100%;
+                              position: fixed;
+                              top: 0;
+                              bottom: 0;
+                              left: 0;
+                              right: 0;
+                            }
+                            
+                            .modal-wrapper {
+                              width: 620px;
+                              height: 550px;
+                              background: ghostwhite;
+                              position: fixed;
+                              top: 50%;
+                              left: 50%;
+                              transform: translate(-50%, -50%);
+                            }
+                            
+                            .open-modal-btn-wrapper {
+                              position: fixed;
+                              top: 50%;
+                              left: 50%;
+                              transform: translate(-50%, -50%);
+                            }
+                            
+                            .close-modal-btn {
+                              padding: 8px;
+                              background: #d41443;
+                              font-family:
+                              font-size 15px;
+                              color: ghostwhite;
+                              margin-left:35rem;
+                              font-weight: 5px;
+                              margin-top: 3px;
+                              margin-right: 8px;
+                              cursor: pointer;
+                            }
+                            
+
+                          .title__video{
+                            font-family: Titan One;
+                            font-size: 35px;
+                            font-weight: 100px;
+                            line-height: 53px;
+                            letter-spacing: 0.04em;
+                            margin-right: 5px;
+                            color: #d41443;
+                            text-align: center;
+
+                          }
+
+                            .close-btn-wrapper {
+                              display: flex;
+                            }
+                            
+                            .modal-content {
+                              border-radius:15px;
+                              margin: 1px auto;
+                              max-width: 500px;
+                              width: 100%;
+                              background-color:#d48114;
+                            }
+                            
+                            .hide {
+                              top:1px;
+                              display: none;
+                            }
+                            
+                            h1 {
+                              text-align: center;
+                            }
+                            
+
+
+
+
+                                        /* estilos  modal boton compra*/
+
+                                        .title__form{
+                                          color: #d41443;
+                                          font-family: Titan One;
+                                          font-size: 58px;
+                                          font-weight: 400;
+                                          line-height: 52px;
+                                          letter-spacing: 0.04em;
+                                        }
+
+                                        .backdrop-container{
+                                          top:0;
+                                          left:0;
+                                          position:absolute;
+                                          background-color:rgba(121, 51, 51, 0.956);
+                                          box-shadow:rgba(0, 0, 0, 0.676);
+                                          width: 100vw;
+                                          height: 100vh;
+                                          justify-content:flex-end;
+                                          align-items: center;
+                                          pointer-events: painted;
+                                          z-index: 1;
+                                      }
+                                      
+                                      .modal{
+                                      padding:40px 40px;
+                                      width: 528px;
+                                      height: 581px;
+                                      background-color: white;
+                                      border:1px solid black;
+                                      margin:auto;
+                                      border-radius: 4px;
+                                      position:relative;
+                                      display:flex;
+                                      flex-direction: column;
+                                      flex-wrap: wrap;
+                                      }
+                                      
+                                      .modal h1{
+                                      top:100px;  
+                                      font-size: 25px;
+                                      font-weight: 500;
+                                      margin-bottom:20px;
+                                      font-family: Dn Sans;
+                                      font-size: 20px;
+                                      font-weight: 700;
+                                      line-height: 23px;
+                                      letter-spacing: 0.03em;
+                                      text-align: center;
+                                      }
+                                      
+                                      
+                                      #input-field{
+                                      width: 100%;
+                                      padding:0;
+                                      margin:0;
+                                      outline:none;
+                                      height: 40px;
+                                      padding-left:40px;
+                                      }
+                                      
+                                      .box-text{
+                                      scrollbar-width: 200px;
+                                      outline: none;
+                                      margin-bottom:30px;
+                                      height: 120px;
+                                      }
+                                      
+                                      .box-text::placeholder{
+                                      font-family: Roboto;
+                                      font-size: 12px;
+                                      font-weight: 400;
+                                      line-height: 14px;
+                                      letter-spacing: 0.01em;
+                                      text-align: left;
+                                      color: #75757580;
+                                      }
+                                      
+                                  
+                                      
+                                      .terminos{
+                                      padding-left:2.5rem;
+                                      width:25rem;
+                                      font-family: Roboto;
+                                      font-size: 14px;
+                                      font-weight: 400;
+                                      line-height: 24px;
+                                      letter-spacing: 0.03em;
+                                      text-align: left;
+                                      color: #d61212;
+                                      }
+                                      
+                                      
+                                      .btn-form{
+                                          display:flex;
+                                          width: 12.5rem;
+                                          height: 3.125rem;
+                                          color: #d41443;
+                                          background-color: #ffb8ca;
+                                          border-style: none;
+                                          margin:auto;
+                                          justify-content: center;
+                                          align-items: center;
+                                          border-radius: 4px;
+                                          position:static;
+                                          margin-bottom:-10px;
+                                      }
+                                      
+                                      
+                                      .btn-form:focus,
+                                      .btn-form:hover{
+                                          box-shadow: 0px 4px 4px 0px #00000026;
+                                      }
+                                      
+                                      .checkbox{
+                                        margin-left:10%;
+                                      }
+
+                                      .label_form{
+                                      font-family:  DM Sans;
+                                      font-style: italic;
+                                      font-size: 12px;
+                                      font-weight: 400;
+                                      line-height: 14px;
+                                      letter-spacing: 0.01em;
+                                      text-align: left;
+                                      color: #df2b2b;
+                                      }
+                                      
+                                      .container-field{
+                                          position:relative;
+                                          display:flex;
+                                          height: 40px;
+                                          align-items: center;
+                                      }
+                                      
+                                      .box-text:focus,
+                                      .box-text:hover,
+                                      #input-field:hover,
+                                      #input-field.focus{
+                                       border: 1px solid #d41443;
+                                      }
+                                  
+                                      .back-icon-svg:hover{
+                                          fill:#d41443;
+                                      }
+                                      
+                                      .back-icon-svg{
+                                          position:absolute;
+                                          margin-left:14px;
+                                      }
+                                      
+                                      #close-btn{
+                                      display:flex;
+                                      position:absolute;
+                                      background-color: #ECECEC;
+                                      top: 8px;
+                                      right:8px;
+                                      width: 30px;
+                                      height: 30px;
+                                      border-radius:15px;
+                                      cursor:pointer;
+                                      justify-content: center;
+                                      align-items: center;
+                                      padding:10px;
+                                      border: 1px solid #0000001A
+                                      }
+                                      
+                                      .close{
+                                          display:flex;
+                                      }
+                                      
+                                      .icons:hover,
+                                      .icons:focus{   
+                                          fill:#d41443;
+                                      }
+                                      
+                                      
+                                      #close-btn:hover{
+                                       background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                                      linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                                      
+                                      }
+                                      .is-hidden{
+                                      visibility: hidden;
+                                      }
+
+
+
+
+
+
+                        
+                    /*PIE DE HEADER*/
+
+
+                
+                        .foot__section {
+                          display: flex;
+                          justify-content: space-between;
+                          width: 100%;
+                          height: 50%;
+                        }
+
+                          .block__left {
+                            height: 150px;
+                            display: block;
+                            display: flex;
+                            flex-direction: column}
+
+/*
+                            .block__right {
+                              display: flex;
+                              position: relative;
+                              align-items: baseline;
+                            }
+        */
+
+                            .text__end{
+                              width: 200px;
+                              height: 78px;
+                              top: 456px;
+                              left: 229px;
+                              margin-bottom: 20px;
+                              font-family: DM Sans;
+                              font-size: 14px;
+                              font-weight: 400;
+                              line-height: 20px;
+                              letter-spacing: 0em;
+                              text-align: left;
+                              color: #ffffff;
+                            }
+
+                                /*FOOT HEADER*/
+
+                              .foot__left {
+                                display: flex;
+                                position: relative;
+                                justify-content: flex-start;
+                                align-items: center;
+                                margin-left: 20px;
+                                bottom: 60px;
+                              }
+
+                              .foot__right {
+                                position: absolute;
+                                top: 423px;
+                                right: 50px;
+                              }

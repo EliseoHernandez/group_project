@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
 }
 
 body {
@@ -12,10 +13,30 @@ body {
   background-position-x: 70%;
   background-position-y: 30%;
   z-index: -1;
+
   margin-left: 0 auto;
 }
 
 
+
+      .header {
+        background-color: #ffb8ca;
+        font-family: Titan One;
+        height: 664px;
+        background-image: url(/src/images/Ellipse_3.svg),;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 30%,95%;
+        background-position-x: 70%,60%;
+        z-index:-1;
+      }
+
+      .header::after{
+        background-image: url(/src/images/bottom-background.svg);
+        z-index:-1;
+        background-position:30
+
+      }
 
       .header {
         height: 664px;
@@ -26,6 +47,7 @@ body {
         background-position-x: 60%;
         z-index: -1;
       }
+
 
 /*espeficaciones contenedor header*/
 
@@ -39,7 +61,7 @@ body {
         position: relative;
         z-index: 2;
       }
-      
+
 
                 .list__i {
                   display: flex;
@@ -48,7 +70,7 @@ body {
                   justify-content: space-between;
                   list-style-type: none;
                 }
-                
+
                     .nav__link {
                       font-family: DM Sans;
                       font-size: 16px;
@@ -59,14 +81,13 @@ body {
                       text-decoration: none;
                       color: #ffffff;
                     }
-                    
-      
+
                         .nav__link:hover,
                         .nav__link:focus {
                           color: #d41443;
                         }
 
-                 /*finaliza parametros para el menu*/       
+
 
                  /*comienza configuración boton derecho superior*/
                           .btn__right {
@@ -83,7 +104,11 @@ body {
                             align-items: center;
                           }
 
+
+                          .btn__right:hover,
+
                           .btn__right:hover, 
+
                           .btn__right:focus {
                             background-color: #ecebeb;
                             color: #ffffff;
@@ -121,7 +146,7 @@ body {
                                     height: 300px;
                                   }
 
-                          
+
                                         .left__opt{
                                               width: 277px;
                                               height: 137px;
@@ -150,7 +175,7 @@ body {
                                             text-align: left;
                                           }
 
-                                                                  
+
                                       /*button Ice Cream */
                                       .buttons {
                                         margin-top: 12px;
@@ -173,7 +198,7 @@ body {
                                         letter-spacing: 0em;
                                         text-align: center;
                                       }
-      
+
                                       .btn__made{
                                         background: #d41443;
                                         width: 138px;
@@ -201,7 +226,7 @@ body {
 
 
                                     <!--bloques superpuestos-->
-                                    
+                    
 
 
                                     .next__right {
@@ -215,11 +240,19 @@ body {
                                       left: 70px;
                                       z-index: -1;
                                     }
+
+
+                            .group__obj {
+                            list-style: none;
+                              }
+
+
                             
                             .group__obj {
                             list-style: none;
                               }
                                     
+
                                     .big__number {
                                       font-family: Titan One;
                                       font-size: 46px;
@@ -238,10 +271,17 @@ body {
                                       letter-spacing: 0em;
                                       text-align: left;
                                       color: #ffffff;
+
+                                      z-index: -1;
+                                    }
+
+                            /* segundo bloque sobreposition*/
+
                                       z-index: -1;                                   
                                     }
 
                             /* segundo bloque sobreposition*/             
+
 
                             .block__left {
                                display: flex;
@@ -310,7 +350,7 @@ body {
                                     text-align: left;
                                     color: #ffffff;
                                   }
-                                    
+
                                       /*FOOT HEADER*/
 
                                     .foot__right {
@@ -326,4 +366,7 @@ body {
                                       position: absolute;
                                       top: 423px;
                                       right: 50px;
+
 }/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
+
