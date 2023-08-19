@@ -1,70 +1,50 @@
 .header {
   font-family: Titan One;
   background-color: #ffb8ca;
-
-
-  /* crear clase SVG para logos */
+  /*SVG circulo de helado */
   background-image: url(/src/images/Ellipse_3.svg);
   background-repeat: no-repeat;
-  background-position-x: 70%;
-  background-position-y: 30%;
-  margin-left: 0 auto;
+  background-position: 70% 30%; 
 
   &__cont {
-      flex-basis: 1400px;
-      height: 664px;
-  
-  
+      height: 664px; 
       /* crear clase SVG para logos */
-      background-image: url(/src/images/bottom-background.svg);
+      background-image: url(/src/images/cone.svg);
       background-repeat: no-repeat;
       background-position: center;
-      background-position-y: 95%;
-      background-position-x: 60%;
-      z-index: -1;
+      background-position: 60% 97%;
   }  
-
-  &__nav  {
-      display:flex;
-      padding:15px 15px;
-      flex-basis: 100vw;
-      justify-content: space-between;
-      align-items: center;
-  }
 }  
 
-/* especificadores de header */
+/* Nav */
 
-
-.nav-items {
-  display:inline-flex;
-  width: 541px;
-  align-items: start;
+.nav  {
+  display:flex;
+  padding:15px 15px;
   justify-content: space-between;
-  list-style-type: none; /* esto va en _base.scss*/
-  
-  &__link {
-      font-family: DM Sans;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 21px;
-      letter-spacing: 0em;
-      text-align: left;
-      text-decoration: none;
-      color: #ffffff;
-      &:hover,
-      &:focus{
-          color: #d41443;
-      }
+  align-items: center;
+  &__items {
+    display:inline-flex;
+    width: 541px;
+    justify-content: space-between;
   }
-  
-  
+  &__link {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    &:is(:hover, :focus){
+    color: #d41443;
+    }
+
+  }  
 
 }
 
 /*comienza configuración boton derecho superior*/
 
-.btn__buy {
+.btn-buy {
   width: 159px;
   height: 44px;
   background-color: #ffffff;
@@ -76,29 +56,22 @@
   align-items: center;
   justify-content: center;
   gap:20px;
+  &:is(:hover, :focus) {
+    background-color: #ecebeb;
+    color: #ffffff;
+  }
+  &__text {
+    color: #d41443;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
 }
 
-.btn__buy:hover,
-.btn__buy:focus{
-  background-color: #ecebeb;
-  color: #ffffff;
-}
 
-.btn__text {
-  color: #d41443;
-  justify-content: center;
-  font-family: DM Sans;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-
-.icon--ppal:hover,
-.icon--ppal:focus{
-  fill: #ffffff;
-}   /* Organizar con el svg que usaron los demas para no crear conflicto o no repetir codigo*/
+/* Organizar con el svg que usaron los demas para no crear conflicto o no repetir codigo*/
 
 
 
@@ -119,36 +92,29 @@
 este codigo no esta afectando el html   
 */      
 
-.menu__next {
+.title-h {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 1280px;
   height: 300px;
-}
-
-
-.menu__left{
-  width: 277px;
-  height: 137px;
-  margin-left: 56px;
-  margin-left: 20px;
-  height: auto;
-}
-
-
-/*Creamos clases para los titulos a la izquierda */
-
-.text{
-  font-family: Titan One;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  text-align: left;
-
+  &__left{
+    width: 277px;
+    margin-left: 56px;
+    margin-left: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  &__text{
+    font-family: Titan One;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
   &__tittle1 {
-      color: #ffffff;
-      font-size: 38px;
-      line-height: 44px;
+    color: #ffffff;
+    font-size: 38px;
+    line-height: 44px;
   }
   &__tittle2{
       color: #d41443;
@@ -158,47 +124,47 @@ este codigo no esta afectando el html
   }
 }
 
-/*button Ice Cream */
-
-
-.buttons__left{   
-  margin-top: 12px;
-  display: inline-flex;
-  gap: 12px;
-}
-
-.btn-title{ /* cambiar nombre para que los hijos puedan tomar caracteristicas del padre*/
+/*button del titulo */
+ 
+.btn-t {
   display:flex;
   justify-content: center;
   align-items:center;
-  background: #d41443;
-  height: 40px;
-  border-radius: 20px;
+  text-align: center; 
   font-family: DM Sans;
   font-size: 14px;
   font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0em;
-  text-align: center; /*opcional borrarlo*/
-  color: #ffffff;
+  gap: 20px;
+  
+  
 
-  &__product{
-      width: 107px;
-      top: 308px;
-      left: 16px;
-
+  &__products{
+    width: 107px;
+    height: 40px;
+    color: #fff;
+    background: #d41443;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:is(:hover, :focus) {
+      background-color: #ecebeb;
+      color: #d41443;
+  }
   }
   &__made{
       width: 138px;
-      top: 308px;
-      left: 135px;
-
-  }
-
-  &:hover,
-  &:focus {
-      background-color: #ecebeb;
-      color: #d41443;
+      height: 40px;
+      background: #ffffff;
+      color: #d41443;      
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:is(:hover, :focus) {
+        background-color: #d41443;
+        color: #ecebeb;
+    }
   }
   
 }
@@ -206,11 +172,12 @@ este codigo no esta afectando el html
 /*--bloques superpuestos*/
 
 
-/*
+
 .group__right {
   top: 150px;
   left:90%;
-  position: absolute;}
+  position: absolute;
+}
 
 .group__logo {
   position: relative;
@@ -242,7 +209,7 @@ list-style: none;
   text-align: left;
   color: #ffffff;
   z-index: 2;
-}*/
+}
 
 
 /*PIE DE HEADER*/

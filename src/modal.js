@@ -1,20 +1,3 @@
-// let openModal = document.getElementById('btn-open-modal');
-// let modalImagen = document.getElementById('modal');
-// let closeModal = document.getElementById('btn-close-modal');
-
-// openModal.onclick = function () {
-//   modalImagen.style.visibility = 'visible';
-// };
-
-// closeModal.onclick = function () {
-//   modalImagen.style.visibility = 'hidden';
-// };
-
-// modalImagen.onclick = function () {
-//   modalImagen.style.visibility = 'hidden';
-// };
-
-
 (() => {
     const refs = {
       openModalBtn: document.querySelector("[data-modal-open]"),
