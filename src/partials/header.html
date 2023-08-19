@@ -1,53 +1,52 @@
-<header class="header"> 
-  <div class="header__cont container">
-      <section class="header__nav">
-          <img src="/src/partials/images/image__logo__ice.svg" alt="Logo_cream">    
-          <ul class="nav-items">
+<header class="header container"> 
+  <div class="header__cont">
+      <section class="nav">
+          <img src="/src/images/image__logo__ice.svg" alt="Logo_cream">    
+          <ul class="nav__items">
               <li>
-                  <a href="#" class="nav-items__link">Home</a>
+                  <a href="#" class="nav__link">Home</a>
               </li>
               <li>
-                  <a href="#" class="nav-items__link">About us</a>
+                  <a href="#" class="nav__link">About us</a>
               </li>
               <li>
-                  <a href="#" class="nav-items__link">How it's made</a>
+                  <a href="#" class="nav__link">How it's made</a>
               </li>
               <li>
-                  <a href="#" class="nav-items__link">Our product</a>
+                  <a href="#" class="nav__link">Our product</a>
               </li>
               <li>
-                  <a href="#" class="nav-items__link">Contact</a>
+                  <a href="#" class="nav__link">Contact</a>
               </li>
           </ul>
-          <a href="#" class="btn__buy" onclick="ocultar()">
-              <span class="btn__text" data-modal-open>Buy Now</span>
-              <svg class="icon--ppal" width="10px" height="16px">
-                  <use xlink:href="/src/images/icons.svg#arrowred"/>
-                   </svg>
-              <!--img src="/images/arrow.svg" alt="icon" />*/-->
-                  </a>
+          <a href="#" class="btn-buy" onclick="ocultar()">
+              <span class="btn-buy__text" data-modal-open>Buy Now</span>
+              <svg width="8" height="10">
+                <use href="./images/icons.svg#icon-arrow1"></use>
+              </svg>
+          </a>
           <!--  comienza modal  formulario datos-->
-          <div class="backdrop-container is-hidden" data-modal>
+          <!-- <div class="backdrop-container is-hidden" data-modal>
               <form action="action_page.php" class="modal">
                   <h1 class="title__form">Haga su Pedido Ya</h1>
                   <label for="usr-name" class="label_form" id="usr-name">Nombre</label>
                   <div class="container-field">
                    <svg class="back-icon-svg" width="18px" height="18px">
-                  <use xlink:href="/src/partials/images/icons.svg#contac-name"/>
+                  <use link:href="/src/images/icons.svg#contac-name"/>
                    </svg>
                    <input class="input-field" type="text" name="usr-name">
                   </div>
                   <label for="phone" class="label_form" id="phone">Teléfono:</label>
                   <div class="container-field">
                       <svg class="back-icon-svg" width="18px" height="18px">
-                          <use xlink:href="/src/images/icons.svg#phone"/>
+                          <use link:href="/src/images/icons.svg#phone"/>
                            </svg>
                   <input id="input-field" type="tel" required>
                   </div>  
                   <label for="email" class="label_form">E-mail</label>
                   <div class="container-field">
                       <svg class="back-icon-svg" width="18px" height="18px">
-                          <use xlink:href="/src/images/icons.svg#mensaje"/>
+                          <use link:href="/src/images/icons.svg#mensaje"/>
                            </svg>
                   <input id="input-field" type="email"  required>
                   </div>
@@ -57,29 +56,29 @@
                   <label class="terminos">Estoy de acuerdo con el boletin informativo y acepto los Términos y Condiciones.</label>
                <button data-modal-close id="close-btn" onclick="mostrar()">   
                  <svg class="close">
-                      <use  class="icons" xlink:href="/src/images/icons.svg#xvector"/>
+                      <use  class="icons" link:href="/src/images/icons.svg#xvector"/>
                       </svg>
                </button>
                <button class="btn-form" type="button">Enviar</button>
               </form>
-          </div>
+          </div> -->
       <!--     fin  Formulario Modal -->
       </section>
-      <section class="menu__next">
-          <div class="menu__left">
-              <div class="text">
-                  <h1 class="text__tittle1">
+      <section class="title-h">
+          <div class="title-h__left">
+              <div class="title-h__text">
+                  <h1 class="title-h__tittle1">
                       ICE CREAM MADRE WITH
                   </h1>
-                  <h2 class="text__tittle2">
+                  <h2 class="title-h__tittle2">
                       PASSION
                   </h2>
               </div>
-              <div class="btn-tittle">
-                  <div class="btn-tittle__products">
+              <div class="btn-t">
+                  <div class="btn-t__products">
                       Products
                   </div>
-                  <div class="btn-tittle__made">
+                  <div class="btn-t__made">
                       How it's made
                   </div>
               </div>
@@ -126,7 +125,7 @@
               </h6>
               <a class="open-modal-btn" onclick="ocultar()" href="#">
                 <!---- <svg class="botoncito" transform="scale(0.025)">
-                      <use  class="icons" xlink:href="/images/icons.svg#image0_70748_227"/>
+                      <use  class="icons" link:href="/images/icons.svg#image0_70748_227"/>
                       </svg>-->
               <img class="logo__img" src="/src/images/arrow-right_3.svg" alt="arrow button">
           </a>
@@ -135,7 +134,7 @@
                         
               <!-- Ventana Modal Promociones-->
 
-              <div class="modal-overlay hide">
+              <!-- <div class="modal-overlay hide">
                   <div class="modal-wrapper">
                       <div class="close-btn-wrapper">
                           <button class="close-modal-btn" onclick="mostrar()">
@@ -145,10 +144,10 @@
                       <h4 class="title__video">HOW TO MAKE THE ICE CREAM</h4>
                       <div class="modal-content">
                           <video width="500" height="400" autoplay muted>
-                              <source src="/src/partials/video/Homemade.mp4" type="video/mp4">
+                              <source src="" type="video/mp4">
                       </div>
                   </div>
-              </div>
+              </div> -->
 
                   <!---->
           <div id="image_milk" class="foot-left">
