@@ -13,6 +13,9 @@ body {
 .description {
   background: var(--brand-color2);
   padding-bottom: 15%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   &__slogan {
     color: var(--secondary-color);
     text-align: center;
