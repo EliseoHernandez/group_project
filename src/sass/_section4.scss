@@ -1,3 +1,7 @@
+a:link, a:visited {
+    text-decoration: none;
+    color: #907E82;
+}
 
 .card2{
 /* width: 1200px;
@@ -7,6 +11,7 @@ gap: 32px;
 justify-content: center;
 align-items: center;
 padding-top: 120px;
+
 
     &__space{
     width: 368px;
@@ -158,3 +163,21 @@ margin-top: 0;
     margin-left: 10px;
 }
 
+.footer__buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 121px;
+}
+
+.fbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 0px;
+    
+}
+.fbutton__svg{
+    margin-left: 10px;
+}
