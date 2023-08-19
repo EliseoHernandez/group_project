@@ -7,7 +7,6 @@ gap: 32px;
 justify-content: center;
 align-items: center;
 padding-top: 120px;
-padding-bottom: 225px;
 
     &__space{
     width: 368px;
@@ -140,3 +139,22 @@ margin-top: 0;
     }
 }
 }
+
+.footer__buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 121px;
+}
+
+.fbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    
+}
+.fbutton__svg{
+    margin-left: 10px;
+}
+
