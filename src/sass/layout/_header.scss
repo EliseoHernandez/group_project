@@ -1,367 +1,291 @@
-/* * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-} */
-.rose{
-/*   width: 1280px; */
-/*   height: 664px; */
-  background-color: #FFB8CA;
-  margin-left:auto;
-  background-image: url(/src/images/Ellipse_3.svg);
-  background-repeat: no-repeat;
-  background-position-x: 70%;
-  background-position-y: 30%;
-;
-}
-.logo__tasty {
-  width: 304px;
-  height: 241px;
-}
-
-.logo__tasty{
-  width: 304px;
-height: 241px;
-margin: 0;
-}
-  
-/* body {
-  font-family: Titan One;
-
-  background-image: url(/src/images/Ellipse_3.svg);
-  background-repeat: no-repeat;
-  background-position-x: 70%;
-  background-position-y: 30%;
-  z-index: -1;
-  margin-left: 0 auto;
-} */
-
-/* body {
+.header {
   font-family: Titan One;
   background-color: #ffb8ca;
+
+
+  /* crear clase SVG para logos */
   background-image: url(/src/images/Ellipse_3.svg);
   background-repeat: no-repeat;
   background-position-x: 70%;
   background-position-y: 30%;
-  z-index: -1;
   margin-left: 0 auto;
-}
- */
- .header__ul{
-  background-image: url(/src/images/bottom-background.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: 95%;
-  background-position-x: 60%;
-}
-/*       .header {
-        height: 664px;
 
-      } */
+  &__cont {
+      flex-basis: 1400px;
+      height: 664px;
+  
+  
+      /* crear clase SVG para logos */
+      background-image: url(/src/images/bottom-background.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 95%;
+      background-position-x: 60%;
+      z-index: -1;
+  }  
 
- 
+  &__nav  {
+      display:flex;
+      padding:15px 15px;
+      flex-basis: 100vw;
+      justify-content: space-between;
+      align-items: center;
+  }
+}  
 
-/*espeficaciones contenedor header*/
+/* especificadores de header */
 
-    .header .nav {
 
-    width: 100%;
-    max-width: 1280px;
-    z-index: 2;
-    justify-content: space-evenly;
-    padding: 30px 10px;
-    display: inline-flex;
-    position: relative;
-    align-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: row;
+.nav-items {
+  display:inline-flex;
+  width: 541px;
+  align-items: start;
+  justify-content: space-between;
+  list-style-type: none; /* esto va en _base.scss*/
+  
+  &__link {
+      font-family: DM Sans;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
+      text-decoration: none;
+      color: #ffffff;
+      &:hover,
+      &:focus{
+          color: #d41443;
       }
-      
+  }
+  
+  
 
-                .list__i {
-                  display: flex;
-                  width: 541px;
-                  height: 21px;
-                  justify-content: space-between;
-                  list-style-type: none;
-                }
-                
-                    .nav__link {
-                      font-family: DM Sans;
-                      font-size: 16px;
-                      font-weight: 700;
-                      line-height: 21px;
-                      letter-spacing: 0em;
-                      text-align: left;
-                      text-decoration: none;
-                      color: #ffffff;
-                    }
-                    
-      
-                        .nav__link:hover,
-                        .nav__link:focus {
-                          color: #d41443;
-                        }
+}
 
-                 /*finaliza parametros para el menu*/       
+/*comienza configuración boton derecho superior*/
 
-                 /*comienza configuración boton derecho superior*/
-                          .btn__buy {
-                            width: 159px;
-                            height: 44px;
-                            background-color: #ffffff;
-                            border-radius: 22px;
-                            border: 1px;
-                            padding: 0 30px;
-                            display: inline-block;
-                            text-decoration: none;
-                            display: inline-flex;
-                            justify-content: space-between;
-                            align-items: center;
-                          }
+.btn__buy {
+  width: 159px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: 1px;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+}
 
-                          .bnt__buy:hover, 
-                          .bnt__buy:focus {
-                            background-color: #ecebeb;
-                            color: #ffffff;
-                          }
+.btn__buy:hover,
+.btn__buy:focus{
+  background-color: #ecebeb;
+  color: #ffffff;
+}
 
-                          .btn__text-buy {
-                            color: #d41443;
-                            justify-content: center;
-                            font-family: DM Sans;
-                            font-size: 16px;
-                            font-weight: 700;
-                            line-height: 21px;
-                            letter-spacing: 0em;
-                            text-align: center;
-                          }
+.btn__text {
+  color: #d41443;
+  justify-content: center;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+}
 
-                        /*imagen de fondo background*/
-
-                              .img__back__icon {
-                                position: absolute;
-                                z-index: 1;
-                              }
-
-                              .circle__back {
-                                z-index: -1;
-                              }
-
-                            /*               */
-
-                                  .left__opt {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    width: 1280px;
-                                    height: 300px;
-                                  }
-
-                          
-                                        .left__opt-passion{
-                                              width: 277px;
-                                              height: 137px;
-                                              margin-left: 56px;
-                                              margin-left: 20px;
-                                              height: auto;
-                                            }
-
-                                          .first__h1 {
-                                            color: #ffffff;
-                                            font-family: Titan One;
-                                            font-size: 38px;
-                                            font-weight: 400;
-                                            line-height: 44px;
-                                            letter-spacing: 0.04em;
-                                            text-align: left;
-                                          }
-
-                                          .first__h2{
-                                            color: #d41443;
-                                            font-family: Titan One;
-                                            font-size: 58px;
-                                            font-weight: 400;
-                                            line-height: 52px;
-                                            letter-spacing: 0.04em;
-                                            text-align: left;
-                                          }
-
-                                                                  
-                                      /*button Ice Cream */
-                                      .buttons {
-                                        margin-top: 12px;
-                                        display: inline-flex;
-                                        gap: 12px;
-                                      }
-
-                                      .btn__pts{
-                                        background: #d41443;
-                                        height: 40px;
-                                        width: 107px;
-                                        top: 308px;
-                                        left: 16px;
-                                        border-radius: 20px;
-                                        color: #ffffff;
-                                        font-family: DM Sans;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        line-height: 18px;
-                                        letter-spacing: 0em;
-                                        text-align: center;
-                                      }
-      
-                                      .btn__made{
-                                        background: #d41443;
-                                        width: 138px;
-                                        height: 40px;
-                                        top: 308px;
-                                        left: 135px;
-                                        border-radius: 20px;
-                                        color: #ffffff;
-                                        font-family: DM Sans;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        line-height: 18px;
-                                        letter-spacing: 0em;
-                                        text-align: center;
-                                      }
-
-                                      .btn__made:hover,
-                                      .btn__made:focus,
-                                      .btn__pts:hover,
-                                      .btn__pts:focus {
-                                        background-color: #ecebeb;
-                                        color: #d41443;
-                                      }
+.icon--ppal:hover,
+.icon--ppal:focus{
+  fill: #ffffff;
+}   /* Organizar con el svg que usaron los demas para no crear conflicto o no repetir codigo*/
 
 
 
-                                 /*    <!--bloques superpuestos--> */
-                                    
+
+/*---------------------imagen de fondo background-----------------------*/
+
+/* .img__back__icon {
+  position: absolute;
+  z-index: 1;
+}  
 
 
-                                    .next__right {
-                                      top: -20px;
-                                      position: absolute;
-                                    }
+
+.circle__back {
+  z-index: -1;
+}
+
+este codigo no esta afectando el html   
+*/      
+
+.menu__next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  height: 300px;
+}
 
 
-                                    .circle__white {
-                                      position: relative;
-                                      left: 70px;
-                                      z-index: -1;
-                                    }
-                            
-                            .group__obj {
-                            list-style: none;
-                              }
-                                    
-                                    .big__number {
-                                      font-family: Titan One;
-                                      font-size: 46px;
-                                      font-weight: 400;
-                                      line-height: 53px;
-                                      letter-spacing: 0.04em;
-                                      margin-right: 5px;
-                                      color: #d41443;
-                                    }
-
-                                    .text__big {
-                                      font-family: DM Sans;
-                                      font-size: 14px;
-                                      font-weight: 400;
-                                      line-height: 20px;
-                                      letter-spacing: 0em;
-                                      text-align: left;
-                                      color: #ffffff;
-                                      z-index: -1;                                   
-                                    }
-
-                            /* segundo bloque sobreposition*/             
-
-                            .block__left {
-                               display: flex;
-                              position: relative;
-                                }
-
-                              .block__obj {
-                                      display: flex;
-                                      flex-direction: column;
-                                      width: auto;
-                                      height: 73px;
-                                      margin-top: -25px;
-                                      left: 30px;
-                                      position: relative;
-                                      justify-content: left;
-                                    }
-
-                                .group__obj:nth-child(2) {
-                                  top: -10px;
-                                  position: relative;
-                                }
+.menu__left{
+  width: 277px;
+  height: 137px;
+  margin-left: 56px;
+  margin-left: 20px;
+  height: auto;
+}
 
 
-                                .header__next__left {
-                                  display: flex;
-                                  flex-direction: column;
-                                  height: auto;
-                                  width: 100px;
-                                  position: relative;
-                                  justify-content: left;
-                                }
+/*Creamos clases para los titulos a la izquierda */
 
-                                .block__right {
-                                  display: flex;
-                                  position: relative;
-                                  align-items: baseline;
-                                }
+.text{
+  font-family: Titan One;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-align: left;
 
-                          /*PIE DE HEADER*/
+  &__tittle1 {
+      color: #ffffff;
+      font-size: 38px;
+      line-height: 44px;
+  }
+  &__tittle2{
+      color: #d41443;
+      font-size: 58px;
+      font-weight: 400;
+      line-height: 52px;
+  }
+}
+
+/*button Ice Cream */
 
 
-                              .header__foot {
-                                display: flex;
-                                justify-content: space-between;
-                                width: 100%;
-                                height: 50%;
-                              }
+.buttons__left{   
+  margin-top: 12px;
+  display: inline-flex;
+  gap: 12px;
+}
 
-                                .block__right {
-                                  height: 150px;
-                                  display: block;
-                                  display: flex;
-                                  flex-direction: column}
+.btn-title{ /* cambiar nombre para que los hijos puedan tomar caracteristicas del padre*/
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  background: #d41443;
+  height: 40px;
+  border-radius: 20px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center; /*opcional borrarlo*/
+  color: #ffffff;
 
-                                  .text__end{
-                                    width: 200px;
-                                    height: 78px;
-                                    top: 456px;
-                                    left: 229px;
-                                    margin-bottom: 20px;
-                                    font-family: DM Sans;
-                                    font-size: 14px;
-                                    font-weight: 400;
-                                    line-height: 20px;
-                                    letter-spacing: 0em;
-                                    text-align: left;
-                                    color: #ffffff;
-                                  }
-                                    
-                                      /*FOOT HEADER*/
+  &__product{
+      width: 107px;
+      top: 308px;
+      left: 16px;
 
-                                    .foot__right {
-                                      display: flex;
-                                      position: relative;
-                                      justify-content: flex-start;
-                                      align-items: center;
-                                      margin-left: 20px;
-                                      bottom: 60px;
-                                    }
+  }
+  &__made{
+      width: 138px;
+      top: 308px;
+      left: 135px;
 
-                                    .foot__left {
-                                      position: absolute;
-                                      top: 423px;
-                                      right: 50px;
-}/*# sourceMappingURL=styles.css.map */
+  }
+
+  &:hover,
+  &:focus {
+      background-color: #ecebeb;
+      color: #d41443;
+  }
+  
+}
+
+/*--bloques superpuestos*/
+
+
+/*
+.group__right {
+  top: 150px;
+  left:90%;
+  position: absolute;}
+
+.group__logo {
+  position: relative;
+  left: 70px;
+  z-index: 1;
+}
+
+.group__obj {
+list-style: none;
+}
+-----------------------------------------------se opta por una descarga de img------------------------------------------
+.group__big {
+  font-family: Titan One;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0.04em;
+  margin-right: 5px;
+  color: #d41443;
+  z-index:1;
+}
+
+.big__text {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  z-index: 2;
+}*/
+
+
+/*PIE DE HEADER*/
+
+.foot-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+
+.block__left {
+  height: 150px;
+  display: block;
+  display: flex;
+  flex-direction: column}
+
+.text__end{
+  width: 200px;
+  height: 78px;
+  top: 456px;
+  left: 229px;
+  margin-bottom: 20px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+/*FOOT HEADER*/
+.foot-left {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+  bottom: 60px;
+}
+.foot-right {
+  position: absolute;
+  top: 423px;
+  right: 50px;
+}
