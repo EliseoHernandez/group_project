@@ -1,14 +1,14 @@
-.header {
+/* .header {
   font-family: Titan One;
   background-color: #ffb8ca;
-  /*SVG circulo de helado */
+  /*SVG circulo de helado *//*
   background-image: url(/src/images/Ellipse_3.svg);
   background-repeat: no-repeat;
   background-position: 70% 30%; 
 
   &__cont {
       height: 664px; 
-      /* crear clase SVG para logos */
+      /* crear clase SVG para logos *//*
       background-image: url(/src/images/cone.svg);
       background-repeat: no-repeat;
       background-position: center;
@@ -17,7 +17,7 @@
 }  
 
 /* Nav */
-
+/*
 .nav  {
   display:flex;
   padding:15px 15px;
@@ -43,7 +43,7 @@
 }
 
 /*comienza configuración boton derecho superior*/
-
+/*
 .btn-buy {
   width: 159px;
   height: 44px;
@@ -91,7 +91,7 @@
 
 este codigo no esta afectando el html   
 */      
-
+/*
 .title-h {
   display: flex;
   align-items: center;
@@ -125,7 +125,7 @@ este codigo no esta afectando el html
 }
 
 /*button del titulo */
- 
+ /*
 .btn-t {
   display:flex;
   justify-content: center;
@@ -172,7 +172,7 @@ este codigo no esta afectando el html
 /*--bloques superpuestos*/
 
 
-
+/*
 .group__right {
   top: 150px;
   left:90%;
@@ -213,7 +213,7 @@ list-style: none;
 
 
 /*PIE DE HEADER*/
-
+/*
 .foot-section {
   display: flex;
   justify-content: space-between;
@@ -243,6 +243,8 @@ list-style: none;
 }
 
 /*FOOT HEADER*/
+
+/*
 .foot-left {
   display: flex;
   position: relative;
@@ -255,4 +257,4 @@ list-style: none;
   position: absolute;
   top: 423px;
   right: 50px;
-}
+}*/
