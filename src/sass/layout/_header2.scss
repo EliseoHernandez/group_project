@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+
+.header{
+    background-color:#FFB8CA;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.header__svg{
+    margin-top: 37px;
+}
+.nav{
+    margin-top: 52px;
+    display: flex;
+    gap: 35px;
+}
+
+
+.nav__link{
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    &:is(:hover, :focus){
+    color: #d41443;
+    }
+}
+
+
+.header__logo{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.header__button{
+        margin-top: 40px;
+        margin-right: 54px;
+    color: var(--primary-color);
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--brand-color);
+  border: var(--brand-color);
+  border-radius: 22px;
+  width: 159px;
+  height: 44px;
+  cursor: pointer;
+
+}
+
+.header__right{
+    margin-left: 12px;
+}
+
+.header-mid{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.header-mid__title{
+    color: #FFF;
+font-family: Titan One;
+font-size: 38px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.52px;
+text-transform: uppercase;
+}
+
+.header-mid__passion{
+    color: #D41443;
+font-family: Titan One;
+font-size: 58px;
+font-style: normal;
+font-weight: 400;
+line-height: 90.5%;
+letter-spacing: 2.32px;
+text-transform: uppercase;
+}
+
+.header-mid__button--1{
+    margin-top: 24px;
+        margin-right: 16px;
+        color: #FFF;
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: #D41443;
+        padding: 11px 22px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+}
+
+.header-mid__button--2{
+    margin-top: 24px;
+        margin-right: 16px;
+        color: #d41443;
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: #fff;
+        padding: 11px 22px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+}
+
+.numbers{}
+
+.numbers__one{
+    position:relative;
+    z-index: 1;
+    margin-right: 74px;
+    
+    
+}
+
+.numbers__p{
+    color: #D41443;
+text-align: right;
+font-family: Titan One;
+font-size: 46px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.84px;
+text-transform: uppercase;
+margin-bottom: 2px;
+}
+
+.numbers__food{
+    color: #FFF;
+text-align: right;
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 18px;
+}
+
+.numbers__svg{
+    position: absolute;
+    top: -8%;
+    left: 77%;
+    z-index: -1;
+}
+
+.header-last{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-last__img{
+    margin-top: 40px;
+    width: 213px;
+    height: 216px;
+    margin-bottom: 60px;
+}
+
+.header-last__group{
+    display: flex;
+}
+
+.header-last__p{
+    margin-top: 108px;
+    color: #FFF;
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+}
+
+
+
+.bulk__background{
+    position: absolute;
+    width: 534px;
+    height: 534px;
+    background: #FFA5BA;
+    border-radius: 50%;
+    top: 8%;
+    left: 43%;
+    z-index: -2;
+}
+
+.bulk__img{
+    position: absolute;
+    z-index: -1;
+    top: 17%;
+    left: 48.5%;
+    width: 236px;
+height: 557px;
+flex-shrink: 0;
+}
+
+.header-last__tasty{
+    margin-bottom: -84.5%;
+    width: 304px;
+height: 241px;
+margin-right: 56px;
+
+}
+
+.header-last__plus{
+    display: flex;
+}
+.header-last__btn{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.header-last__svg{
+    width: 14px;
+    height: 14px;
+    fill: #D41443;
+}
