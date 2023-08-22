@@ -1,4 +1,4 @@
-const openModal = document.querySelector('.openModal');
+/* const openModal = document.querySelector('.openModal');
 const modal = document.querySelector('.myModal');
 const closeModal = document.querySelector('.closeModal');
 
@@ -10,4 +10,4 @@ openModal.addEventListener('click', (e)=>{
 closeModal.addEventListener('click', (e)=>{
     e.preventDefault();
     modal.classList.remove('modal--show');
-});
+}); */
