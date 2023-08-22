@@ -147,8 +147,7 @@
     &__buttons{
         display: flex;
         justify-content: center;
-        margin-bottom: 121px;
-        cursor: pointer;            
+        margin-bottom: 121px;          
         }
         &__s4button{
             display: flex;
@@ -158,40 +157,76 @@
             margin-top: 60px; 
     }  
 
+    .fbutton__location{
+        cursor: pointer;
+    }
+
     .fbutton__svg{
         margin-left: 10px;
     }
 
-    .modal {
-        display: none;
+   
+   
+    }
+
+    .modal{
         position: fixed;
         top: 0;
-        left: 0;
         right: 0;
-        bottom: 0;
-        background-color: #111111bd;
+        width: 100vw;
+        height: 100vh;
         display: flex;
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    .modal-content {
-        margin: auto;
-       width: 90%;
-       background-color: #FFF;
-       max-width: 600px;
-       max-height: 90%;
-       border-radius: 6px;
-    }
-
-    .closeModal{
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        background: #f3d2d990;
+        pointer-events: auto;
+        flex-direction: column;
+        &.show {
+          visibility: hidden;
+          pointer-events: none;
+        }
+        &__content {
+          width: 623px;
+          height: 474px;
+          padding: 10px 25px;
+          border-radius: 15px;
+          background: #fff;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 20px;
+          & h2 {
+            font-size: 25px;
+            font-weight: 500;
+            color: var(--primary-color);
+          }
+          & p {
+            color: var(--brand-color);
+            font-family: DM Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.56px;
+            text-align: justify;
+          }
+        }
+      }
+      
+      .modal-close {
+        width: 10%;
+        height: 50px;
+        border-radius: 15px;
+        border: 5px solid #fbfbfb;
+        background: #efdada;
+        color: var(--primary-color);
+        text-align: center;
         font-family: DM Sans;
-        font-size: 16px;
+        font-size: 18px;
         font-style: normal;
-    }
-
-    .modal--show{
-        opacity: 1;
-        pointer-events: unset;
-    }
-    }
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+      }
