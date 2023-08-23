@@ -12,14 +12,14 @@
   & h2 {
     font-family: titan one;
     font-weight: 400;
-    font-size: 58px;     
-    color: #d41443;
+    font-size: 58px;
+    color: #D41443;
   }
   & h3 {
     font-family: titan one;
     font-weight: 400;
     font-size: 30px;
-    color: #ffa5ba;
+    color: #FFA5BA;
   }
   & ul {
     list-style-type: none;
@@ -40,7 +40,7 @@
     height: 15px;
     left: 12px;
     top: 11px;
-    fill: #d41443;
+    fill: #D41443;
   }
   &__list {
     color: #ffff;
@@ -65,7 +65,6 @@
     margin: 212px 167px;
   }
 }
-
 .products__icecream {
   font-family: titan one;
   font-weight: 400;
@@ -73,17 +72,15 @@
   letter-spacing: 0.1em;
   width: 368px;
   height: 535px;
-  background-color: #ffb8ca;
+  background-color: #FFB8CA;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   & h3 {
     text-align: center;
     margin: 30px;
   }
-
   & p {
     font-family: DM Sans;
     font-weight: 700;
@@ -93,7 +90,6 @@
     letter-spacing: 1px;
   }
 }
-
 .products__icecoffee {
   font-family: titan one;
   font-weight: 400;
@@ -101,17 +97,15 @@
   letter-spacing: 0.1em;
   width: 368px;
   height: 535px;
-  background: #f0d1a5;
+  background: #F0D1A5;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   & h3 {
     text-align: center;
     margin: 22px;
   }
-
   & p {
     font-family: DM Sans;
     font-weight: 700;
@@ -121,7 +115,6 @@
     letter-spacing: 1px;
   }
 }
-
 .products__milkshakes {
   font-family: titan one;
   font-weight: 400;
@@ -129,7 +122,7 @@
   letter-spacing: 0.1em;
   width: 368px;
   height: 535px;
-  background: #c2e297;
+  background: #C2E297;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
@@ -145,5 +138,134 @@
     text-align: center;
     margin: 30px 60px;
     letter-spacing: 1px;
+  }
+}
+// media screen
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .products {
+    width: 100%;
+  }
+  .products__sec1 {
+    width: 100%;
+  }
+  .products h2 {
+    font-size: 48px;
+  }
+  .products h3 {
+    font-size: 26px;
+  }
+  .products__icecream {
+    width: 100%;
+  }
+  .products__icecream h3 {
+    font-size: 20px;
+    margin: 0px;
+  }
+  .products__icecream p {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin: 65px 10px;
+  }
+  .products__icecoffee {
+    width: 100%;
+  }
+  .products__icecoffee h3 {
+    font-size: 20px;
+    margin: 0px;
+  }
+  .products__icecoffee p {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin: 73px 10px;
+  }
+  .products__milkshakes {
+    width: 100%;
+  }
+  .products__milkshakes h3 {
+    font-size: 20px;
+    margin: 0px;
+  }
+  .products__milkshakes p {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin: 65px 10px;
+  }
+  .products__imag {
+    margin: 45px 0px;
+  }
+  .products__right {
+    margin: 0px 0px 0px 92px;
+  }
+  .products__points {
+    width: 4vw;
+    height: 8vh;
+    margin: 168px 94px;
+  }
+  .products__item {
+    width: 224px;
+  }
+  .products__list {
+    width: 100vw;
+    padding: 0px 40px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .container {
+    width: 100%;
+  }
+  .products__sec1 {
+    width: 100%;
+  }
+  .products h2 {
+    font-size: 34px;
+  }
+  .products h3 {
+    font-size: 18px;
+  }
+  .products__icecream {
+    width: 100%;
+  }
+  .products__icecream h3 {
+    font-size: 20px;
+    margin: 50px;
+  }
+  .products__icecream p {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin: 40px 78px;
+  }
+  .products__icecoffee {
+    width: 100%;
+  }
+  .products__icecoffee h3 {
+    font-size: 20px;
+    margin: 50px;
+  }
+  .products__icecoffee p {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin: 40px 78px;
+  }
+  .products__milkshakes {
+    width: 100%;
+  }
+  .products__milkshakes h3 {
+    font-size: 20px;
+    margin: 50px;
+  }
+  .products__milkshakes p {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin: 40px 78px;
+  }
+  .products__list {
+    flex-direction: column;
+    margin: 10px 10px;
+  }
+  .products__points {
+    margin: 210px 185px;
+  }
+  .products__right {
+    margin: 0px 0px 0px 190px;
   }
 }
