@@ -86,7 +86,6 @@ body {
     height: 20%;
     margin-bottom: 40px;
   }
-
 }
 
 .button-detail {
@@ -111,7 +110,7 @@ body {
   &:hover {
     background: #ecebeb;
     transition: all 0.5s;
-  }  
+  }
 }
 
 /*Botón abrir modal*/
@@ -161,7 +160,6 @@ body {
   }
 }
 
-
 .modal-close {
   width: 30%;
   height: 50px;
@@ -202,15 +200,15 @@ body {
     font-weight: 400;
     letter-spacing: 2.32px;
     text-transform: uppercase;
-    margin: 0;   
-    }    
+    margin: 0;
+  }
   &__list-2 {
     color: var(--tertiary-color);
     font-family: DM Sans;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.8;
-    letter-spacing: 0.32px;    
+    letter-spacing: 0.32px;
   }
   &__list-icon1 {
     &::before {
@@ -250,12 +248,8 @@ body {
     }
   }
 }
-  
-@media screen and (min-width:480px) and (max-width:768px) {   
-  // .product-detail-1 {
-  //   background-image: none;
-  // }
 
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .modal-backdrop {
     width: 100%;
     height: 100%;
@@ -267,21 +261,19 @@ body {
         font-size: 14px;
       }
     }
-    
   }
 
-  .description {    
-  padding-bottom: 40%;   
-  min-width: max-content;
+  .description {
+    padding-bottom: 40%;
   }
   .advantages {
     gap: 0 0;
+    &__list-2 {
+      width: 195px;
+    }
   }
-  .advantages__list-2 {
-    width: 195px;
-  }
+
   .detail {
-    
     background-image: none;
     &__image {
       width: calc(100% - 50%);
@@ -301,10 +293,8 @@ body {
       font-weight: 500;
     }
   }
-  
-
 }
-@media screen and (min-width:0px) and (max-width:479px) {
+@media screen and (min-width: 0px) and (max-width: 479px) {
   .modal-backdrop {
     width: 100%;
     height: 100%;
@@ -316,7 +306,7 @@ body {
       & p {
         font-size: 12px;
       }
-    }    
+    }
   }
   .description {
     padding: 0 20px 66px 20px;
@@ -375,7 +365,5 @@ body {
         top: -60px;
       }
     }
-  
   }
 }
-
