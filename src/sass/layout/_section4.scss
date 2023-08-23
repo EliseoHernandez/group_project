@@ -20,17 +20,26 @@
         }
     
         &__rectangle{
-        border-radius: 6px;
-        background: #F0D1A5;
-        width: 75.103px;
-        height: 28px;
-        flex-shrink: 0;
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        color: #FFF;
-        justify-content: center;
-        margin-bottom: 0;
+            border-radius: 6px;
+            background: #F0D1A5;
+            width: 75.103px;
+            height: 28px;
+            flex-shrink: 0;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            color: #FFF;
+            justify-content: center;
+            margin-bottom: 0;
+            font-style: normal;
+
+            text-align: center;
+            font-family: DM Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 186%; /* 29.76px */
+            letter-spacing: 0.64px;
         }
         &__rectangle2{
         border-radius: 6px;
@@ -43,7 +52,15 @@
         align-items: center;
         color: #FFF;
         justify-content: center;
-        margin-bottom: 0;  
+        margin-bottom: 0;
+        
+        text-align: center;
+            font-family: DM Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 186%; /* 29.76px */
+            letter-spacing: 0.64px;
     }
     
         &__tittle{
@@ -292,4 +309,84 @@
   top: -328px;
 }
     
+    // media screen
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        .card2__space {
+          padding-top: 80px;
+         
+             width: 224px;
+            height: 528px;
+          }
+          .card2__rectangle{
+             width: 73px; 
+          }
+        }
+    
+    @media screen and (min-width: 0px) and (max-width: 479px) {
+        .card2__space {
+              padding-top: 60px;
+            }
+            .card2__rectangle{
+            width: 80px;
+            height: 16px; 
+            font-size: 12px;
+            
+              }
+              .card2__rectangle2{
+                width: 130px;
+                height: 16px;
+                font-size: 12px;
+              }
+              .card2__tittle{
+                font-size: 12px;
+              }
+              .card2__text{
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 18px; /* 150% */
+                letter-spacing: 0.48px;
+              }
+              .card2__line{
+                width: 216px;
+              }
+              .card2__hour1{
+                font-size: 12px;
+                margin-bottom: 8px;
+              }
+            .card2__hour{
+                font-size: 12px;
+                margin-bottom: 24px;
+            }
+            .card2__phone{
+                font-size: 12px;
+                margin-top: 24px;
+                }
+            .card2__mail{
+                font-size: 12px;
+                margin-bottom: 40px;
+            }
+
+           
+        }
+        
+            
+    @media screen and (min-width: 0px) and (max-width: 479px) {
+            .card2 {
+                        width: 280px;
+                        height: 412px;
+                        flex-direction: column;
+                      }
+                    }
+                    .card2__s4button {
+                        flex-flow: column;
+                        place-content: center flex-end;
+                        align-items: center;
+                        gap: 12px;
+                        margin-top: 682px;
+                        display: flex;
+                    }
+
+                  
     
