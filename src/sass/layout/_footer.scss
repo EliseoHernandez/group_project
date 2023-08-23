@@ -7,8 +7,15 @@ li{
     background-color:  #FFF5F6;
     width: vw;
     padding-top: 15%;
-   }
-
+    display: flex;
+    &__last{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;   
+        
+    }
+   
+}
 
 
 .title2{
@@ -113,12 +120,7 @@ font-weight: 700;
 line-height: normal;
 }
 
-.footer__last{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;   
-    
-}
+
 @media screen and (min-width: 768px){
 .footer__last{
     display: flex;
