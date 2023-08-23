@@ -374,8 +374,13 @@ a:link, a:visited {
 
 @media screen and (min-width:480px) and (max-width:768px) { 
     .header{
-    min-height: 416px;
+        
     }
+
+    .container{
+        width: 768px;
+    }
+
     .header__svg{
         margin-top: 32px;
     }
@@ -456,10 +461,12 @@ a:link, a:visited {
 
 
     .numbers{
-        margin-right:-68px;
+        position: relative;
         margin-bottom: 0;
     }
     .numbers__one{
+        margin-right: 0;
+        right: 6px;
     }
     .numbers__p{
         font-size: 28px;
@@ -475,13 +482,17 @@ a:link, a:visited {
 
     
     .bulk__background{
+        max-width: 100%;
         width: 335px;
+        max-height: 100%;
         height: 333px;
         top: 43px;
         left: 248px;
     }
     .bulk__img{
+        max-width: 100%;
         width: 143px;
+        max-width: 100%;
         height: 336px;
         top: 19.9%;
         left: 41.9%;
