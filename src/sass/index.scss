@@ -1,2 +1,14 @@
-@import './common';
-@import './example';
+@import './base/common';
+
+
+@import './layout/_header2.scss';
+@import './layout/_header.scss';
+@import './layout/_section1';
+@import './layout/_section2';
+@import './layout/_section3';
+@import './layout/_section4';
+@import './layout/_footer.scss';
+@import './layout/_header.scss';
+
+
+

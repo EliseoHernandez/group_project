@@ -1,0 +1,260 @@
+/* .header {
+  font-family: Titan One;
+  background-color: #ffb8ca;
+  /*SVG circulo de helado *//*
+  background-image: url(/src/images/Ellipse_3.svg);
+  background-repeat: no-repeat;
+  background-position: 70% 30%; 
+
+  &__cont {
+      height: 664px; 
+      /* crear clase SVG para logos *//*
+      background-image: url(/src/images/cone.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position: 60% 97%;
+  }  
+}  
+
+/* Nav */
+/*
+.nav  {
+  display:flex;
+  padding:15px 15px;
+  justify-content: space-between;
+  align-items: center;
+  &__items {
+    display:inline-flex;
+    width: 541px;
+    justify-content: space-between;
+  }
+  &__link {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    &:is(:hover, :focus){
+    color: #d41443;
+    }
+
+  }  
+
+}
+
+/*comienza configuración boton derecho superior*/
+/*
+.btn-buy {
+  width: 159px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: 1px;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+  &:is(:hover, :focus) {
+    background-color: #ecebeb;
+    color: #ffffff;
+  }
+  &__text {
+    color: #d41443;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+}
+
+
+/* Organizar con el svg que usaron los demas para no crear conflicto o no repetir codigo*/
+
+
+
+
+/*---------------------imagen de fondo background-----------------------*/
+
+/* .img__back__icon {
+  position: absolute;
+  z-index: 1;
+}  
+
+
+
+.circle__back {
+  z-index: -1;
+}
+
+este codigo no esta afectando el html   
+*/      
+/*
+.title-h {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  &__left{
+    width: 277px;
+    margin-left: 56px;
+    margin-left: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  &__text{
+    font-family: Titan One;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+  &__tittle1 {
+    color: #ffffff;
+    font-size: 38px;
+    line-height: 44px;
+  }
+  &__tittle2{
+      color: #d41443;
+      font-size: 58px;
+      font-weight: 400;
+      line-height: 52px;
+  }
+}
+
+/*button del titulo */
+ /*
+.btn-t {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  text-align: center; 
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 20px;
+  
+  
+
+  &__products{
+    width: 107px;
+    height: 40px;
+    color: #fff;
+    background: #d41443;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:is(:hover, :focus) {
+      background-color: #ecebeb;
+      color: #d41443;
+  }
+  }
+  &__made{
+      width: 138px;
+      height: 40px;
+      background: #ffffff;
+      color: #d41443;      
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:is(:hover, :focus) {
+        background-color: #d41443;
+        color: #ecebeb;
+    }
+  }
+  
+}
+
+/*--bloques superpuestos*/
+
+
+/*
+.group__right {
+  top: 150px;
+  left:90%;
+  position: absolute;
+}
+
+.group__logo {
+  position: relative;
+  left: 70px;
+  z-index: 1;
+}
+
+.group__obj {
+list-style: none;
+}
+-----------------------------------------------se opta por una descarga de img------------------------------------------
+.group__big {
+  font-family: Titan One;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0.04em;
+  margin-right: 5px;
+  color: #d41443;
+  z-index:1;
+}
+
+.big__text {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  z-index: 2;
+}
+
+
+/*PIE DE HEADER*/
+/*
+.foot-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+
+.block__left {
+  height: 150px;
+  display: block;
+  display: flex;
+  flex-direction: column}
+
+.text__end{
+  width: 200px;
+  height: 78px;
+  top: 456px;
+  left: 229px;
+  margin-bottom: 20px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+/*FOOT HEADER*/
+
+/*
+.foot-left {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+  bottom: 60px;
+}
+.foot-right {
+  position: absolute;
+  top: 423px;
+  right: 50px;
+}*/
